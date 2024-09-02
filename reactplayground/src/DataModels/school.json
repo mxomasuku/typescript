@@ -1,0 +1,106 @@
+{
+    "schools": [
+      {
+        "name": "Masvingo Day High School",
+        "email": "masvingoday@gmail.com",
+        "category": 2,
+        "schoolId": "47fnna82Qd",
+        "users": ["head", "bursar", "admin", "hod"],
+        "subscriptionType": "termly",
+        "isActive": true,
+        "onTrial": false,
+        "trialExpiryDate": null,
+        "type": "High-school",
+        "subscriptionDetails": {
+          "basePrice": 900,
+          "count": 1,
+          "paymentMethod": "VISA"
+        }
+      },
+      {
+        "name": "Harare Secondary School",
+        "email": "hss@email.com",
+        "category": 1,
+        "schoolId": "a2b3c4d5e6",
+        "users": ["head", "bursar", "admin"],
+        "subscriptionType": "yearly",
+        "isActive": true,
+        "onTrial": false,
+        "trialExpiryDate": null,
+        "type": "Secondary-school",
+        "subscriptionDetails": {
+          "basePrice": 1200,
+          "count": 2,
+          "paymentMethod": "MasterCard"
+        }
+      },
+      {
+        "name": "Bulawayo Primary School",
+        "email": "bps@example.org",
+        "category": 3,
+        "schoolId": "f6g7h8i9j0",
+        "users": ["head", "admin"],
+        "subscriptionType": "monthly",
+        "isActive": true,
+        "onTrial": true,
+        "trialExpiryDate": "2024-09-15",
+        "type": "Primary-school",
+        "subscriptionDetails": {
+          "basePrice": 500,
+          "count": 1,
+          "paymentMethod": "PayPal"
+        }
+      },
+      {
+        "name": "Gweru Technical College",
+        "email": "gtc@gmail.com",
+        "category": 4,
+        "schoolId": "73jsn902jd",
+        "users": ["head", "bursar", "admin", "hod"],
+        "subscriptionType": "yearly",
+        "isActive": false,
+        "onTrial": false,
+        "trialExpiryDate": null,
+        "type": "Technical-college",
+        "subscriptionDetails": {
+          "basePrice": 1500,
+          "count": 3,
+          "paymentMethod": "VISA"
+        }
+      },
+      {
+        "name": "Mutare Academy",
+        "email": "academy@mutare.edu.zw",
+        "category": 1,
+        "schoolId": "12jsn281kd",
+        "users": ["head", "admin"],
+        "subscriptionType": "monthly",
+        "isActive": true,
+        "onTrial": true,
+        "trialExpiryDate": "2024-12-31",
+        "type": "Academy",
+        "subscriptionDetails": {
+          "basePrice": 750,
+          "count": 1,
+          "paymentMethod": "PayPal"
+        }
+      },
+      {
+        "name": "Kariba Primary School",
+        "email": "karibaps@school.zw",
+        "category": 3,
+        "schoolId": "92jsn211jd",
+        "users": ["head", "bursar"],
+        "subscriptionType": "termly",
+        "isActive": false,
+        "onTrial": false,
+        "trialExpiryDate": null,
+        "type": "Primary-school",
+        "subscriptionDetails": {
+          "basePrice": 600,
+          "count": 2,
+          "paymentMethod": "MasterCard"
+        }
+      }
+    ]
+}
