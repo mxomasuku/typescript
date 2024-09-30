@@ -19,10 +19,8 @@ interface ExpandMoreProps extends IconButtonProps {
 }
 
 interface PropertyProps {
-  id: string,
+  id: number,
   price: number,
-  readilyAvailable: boolean,
-  location: string,
   name: string,
   description: string,
 
@@ -39,7 +37,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-const Property: React.FC<PropertyProps> = ({id, name, description, location, readilyAvailable, price}) => {
+const Property: React.FC<PropertyProps> = ({id, name, description, price}) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {

@@ -1,9 +1,11 @@
 import { Box, TextField, Typography, Button, Stack} from "@mui/material"
 import React, { useState } from "react"
+import { PropertyData } from "./Interfaces/interface"
 
 
 interface AddNewPropertyProps {
   onCancel: (open: boolean) => void
+  addNewPropertyHandler: (property: PropertyData) => void
 }
 
 const AddNewProperty: React.FC<AddNewPropertyProps> = (props) => {
@@ -29,12 +31,15 @@ const AddNewProperty: React.FC<AddNewPropertyProps> = (props) => {
 
 const submitHandler = (event: React.FormEvent<HTMLFormElement>) => {
 event.preventDefault()
-const postData = {
-  title: enteredTitle,
+const propertyData = {
+  id: Math.random(),
+  name: enteredTitle,
  description: enteredDescription,
  price: enteredPrice,
 }
-console.log(postData)
+console.log(propertyData)
+props.addNewPropertyHandler(propertyData)
+props.onCancel(false)
 
 }
 
@@ -53,8 +58,7 @@ console.log(postData)
    
           required
           id="outlined-required"
-          label="Required"
-          defaultValue="Enter Property Name"
+          label="Property Name"
           onChange={onChangePropertyNameHandler}
         />
 
@@ -63,9 +67,8 @@ console.log(postData)
              fullWidth
           required
           id="outlined-required"
-          label="Required"
+          label="Price"
           type="number"
-          defaultValue="Enter Price"
           onChange={onPriceChangeHandler}
         />
 
@@ -75,8 +78,7 @@ console.log(postData)
             fullWidth
           required
           id="outlined-required"
-          label="Required"
-          defaultValue="Description"
+          label="Description"
           onChange={onDescriptionChangeHandler}
 
         />
