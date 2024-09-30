@@ -5,7 +5,6 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
@@ -26,7 +25,6 @@ interface PropertyProps {
   location: string,
   name: string,
   description: string,
-  fullDescription: string
 
 }
 
@@ -41,7 +39,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-const Property: React.FC<PropertyProps> = ({id, name, description, location, readilyAvailable, price, fullDescription}) => {
+const Property: React.FC<PropertyProps> = ({id, name, description, location, readilyAvailable, price}) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -91,17 +89,7 @@ const Property: React.FC<PropertyProps> = ({id, name, description, location, rea
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>Full Description:</Typography>
-          
-       
-       
-          <Typography paragraph>
-            {fullDescription}
-          </Typography>
-        </CardContent>
-      </Collapse>
+
     </Card>
   );
 }
