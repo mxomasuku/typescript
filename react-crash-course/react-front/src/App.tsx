@@ -14,6 +14,7 @@ function App() {
   const [properties, setProperties] = useState<PropertyData[]>([])
 
   const addNewPropertyHandler = (propertyData: PropertyData) =>  {
+    fetch("http://localhost:8080")
     setProperties((nomad) => [propertyData, ...nomad])
   
   }
