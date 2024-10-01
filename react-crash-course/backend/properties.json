@@ -1,10 +1,1 @@
-{
-  "properties": [
-    {
-      "id": "dn21",
-      "price": 12345,
-      "name": "Emerald Earrings House",
-      "description": "A beautiful home for a medium family"
-    }
-  ]
-}
+{"properties":[{"id":"0.17041818665352215","name":"GOGO GADGET MONKEY","description":"QWERTY","price":1234},{"id":"0.14427768195655566","name":"Tapsmuzira","description":"Tapsmuzira","price":3000},{"id":"0.321881895395443","name":"House on the hill","description":"Oh come on! You know its cheap","price":1233000},{"id":"dn21","price":12345,"name":"Emerald Earrings House","description":"A beautiful home for a medium family"}]}
