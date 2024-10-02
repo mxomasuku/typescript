@@ -45,7 +45,7 @@ const Property: React.FC<PropertyProps> = ({id, name, description, price}) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} key={id}>
+    <Card sx={{ maxWidth: 345 }} key={id}  >
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

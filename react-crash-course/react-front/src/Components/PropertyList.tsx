@@ -1,5 +1,5 @@
 import Property from './Property'
-import Grid from '@mui/material/Unstable_Grid2';
+import { Grid } from '@mui/material';
 import { PropertyData } from './Interfaces/interface';
 
 
@@ -17,7 +17,7 @@ const PropertyList = ({properties}: PropertyListProps) => {
 {properties.map((property) => {
 
   return(
-    <Grid xs={4}
+    <Grid xs={4} mt={2}
     key={property.id}>
       <Property
       id={property.id}
@@ -30,6 +30,7 @@ const PropertyList = ({properties}: PropertyListProps) => {
 })}
 
     </Grid>
+
   )
 }
 
