@@ -1,7 +1,12 @@
+import Board from "./Board"
+import { Box } from "@mui/material"
 
 const StudentOffers = () => {
   return (
-    <div>Student Offers</div>
+    <Box mt={6}>
+
+    <Board/>
+    </Box>
   )
 }
 
