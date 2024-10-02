@@ -1,10 +1,9 @@
-import './App.css'
-import AddNewProperty from './Components/AddNewProperty'
-import PropertyList from './Components/PropertyList'
+import '../../App.css'
+import AddNewProperty from '../AddNewProperty'
+import PropertyList from '../PropertyList'
 import { useEffect, useState } from 'react'
-import Header from './Components/Header'
-import BasicModal from './Components/BasicModal'
-import { PropertyData } from './Components/Interfaces/interface'
+import BasicModal from '../BasicModal'
+import { PropertyData } from '../Interfaces/interface'
 import { Box, Typography, Skeleton } from '@mui/material'
 
 
@@ -69,7 +68,7 @@ return () => controller?.abort()
   return (
 
     <>
-    <Header/>
+
       <main>
     <BasicModal open={open} setOpen={setOpen}>
     <AddNewProperty 
