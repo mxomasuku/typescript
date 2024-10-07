@@ -1,8 +1,16 @@
+import React from "react"
 
-const OurWork = () => {
-  return (
-    <div>OurWork</div>
-  )
+class OurWork extends React.Component {
+
+  render() {
+    return (
+      <div>
+      <h1>Our Work</h1>
+    </div>
+
+    )
+  
+  }
 }
 
 export default OurWork
