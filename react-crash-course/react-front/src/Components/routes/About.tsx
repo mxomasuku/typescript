@@ -1,8 +1,15 @@
+import { Button } from "@mui/material"
 
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>About
+
+
+      <Button>Click</Button>
+    </div>
+
+
   )
 }
 
