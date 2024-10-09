@@ -1,6 +1,7 @@
 import '../../App.css'
 import AddNewProperty from '../AddNewProperty'
-import PropertyList from '../PropertyList'
+import WithLoading from '../HOC/WithLoading';
+import PropertyList from '../PropertyList';
 import { useEffect, useState } from 'react'
 import BasicModal from '../BasicModal'
 import { PropertyData } from '../Interfaces/interface'
@@ -10,6 +11,7 @@ import { Box, Typography, Skeleton } from '@mui/material'
 
 function App() {
 
+  const PropertiesWithLoading = WithLoading(PropertyList);
   const [open, setOpen] = useState<boolean>(false);
   const [properties, setProperties] = useState<PropertyData[]>([])
   const [isFetching, setIsFetching] = useState<boolean>(false)
@@ -79,7 +81,8 @@ return () => controller?.abort()
     </BasicModal>
 
 {isFetching ? <Box><Typography variant="h1"><Skeleton /></Typography>
-</Box> : <PropertyList properties={properties}/>}
+</Box> :  <PropertiesWithLoading properties={properties} />
+}
 
 
    </main>
