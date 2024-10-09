@@ -8,6 +8,7 @@ import About from './Components/routes/About.tsx'
 import Login from "./Components/routes/Login.tsx"
 import OurWork from './Components/routes/OurWork.tsx'
 import StudentOffers from './Components/routes/StudentOffers.tsx'
+import { TestContextProvider } from './Components/context/TestContext.tsx'
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <TestContextProvider>
     <RouterProvider router={router}/>
+    </TestContextProvider>
+   
  
   </StrictMode>,
 )

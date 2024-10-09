@@ -1,8 +1,22 @@
 
-const Login = () => {
+import {memo, useEffect, useMemo} from "react"
+
+const Login = memo(() => {
+
+  useEffect(() => {}
+, [])
+
+useMemo(() => {
+
+}, [])
   return (
-    <div>Login</div>
+    <div>
+
+    </div>
+
   )
 }
+
+)
 
 export default Login

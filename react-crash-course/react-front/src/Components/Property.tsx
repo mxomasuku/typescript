@@ -23,6 +23,7 @@ interface PropertyProps {
   price: number,
   name: string,
   description: string,
+  setTestString: (name: string) => void
 
 }
 
@@ -37,7 +38,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
-const Property: React.FC<PropertyProps> = ({id, name, description, price}) => {
+const Property: React.FC<PropertyProps> = ({id, name, description, price, setTestString}) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -45,7 +46,8 @@ const Property: React.FC<PropertyProps> = ({id, name, description, price}) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }} key={id}  >
+    <Card sx={{ maxWidth: 345 }} key={id} 
+    onClick={() => setTestString(name)} >
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
